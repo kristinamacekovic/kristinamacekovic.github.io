@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "filename": "2023-10-17-AI-Engineer-Summit-Recap.md",
+      "title": "AI Engineer Summit 2023 Recap",
+      "date": "2023-10-17",
+      "categories": ["event", "AI"],
+      "url": "posts/2023-10-17-AI-Engineer-Summit-Recap.md",
+      "slug": "2023-10-17-AI-Engineer-Summit-Recap"
+    },
+    {
+      "filename": "2020-03-31-COVID19-Graphs-With-Observable.md",
+      "title": "COVID19 Graphs With Observable",
+      "date": "2020-03-31",
+      "categories": ["code", "data", "tools", "visualization"],
+      "url": "posts/2020-03-31-COVID19-Graphs-With-Observable.md",
+      "slug": "2020-03-31-COVID19-Graphs-With-Observable"
+    },
+    {
+      "filename": "2020-03-18-Simple-Spinning-Animation-with-CSS.md",
+      "title": "Simple Spinning Animation with CSS",
+      "date": "2020-03-18",
+      "categories": ["code"],
+      "url": "posts/2020-03-18-Simple-Spinning-Animation-with-CSS.md",
+      "slug": "2020-03-18-Simple-Spinning-Animation-with-CSS"
+    },
+    {
+      "filename": "2019-02-23-Notes-on-Design-Thinking.md",
+      "title": "Notes on Design Thinking",
+      "date": "2019-02-23",
+      "categories": ["design"],
+      "url": "posts/2019-02-23-Notes-on-Design-Thinking.md",
+      "slug": "2019-02-23-Notes-on-Design-Thinking"
+    },
+    {
+      "filename": "2019-02-01-Scraping-and-Wordclouds-with-Python.md",
+      "title": "Scraping and Wordclouds with Python",
+      "date": "2019-02-01",
+      "categories": ["code", "data", "visualization"],
+      "url": "posts/2019-02-01-Scraping-and-Wordclouds-with-Python.md",
+      "slug": "2019-02-01-Scraping-and-Wordclouds-with-Python"
+    },
+    {
+      "filename": "2019-01-13-What-I-Learned-from-Diana.md",
+      "title": "What I Learned from Diana",
+      "date": "2019-01-13",
+      "categories": ["life"],
+      "url": "posts/2019-01-13-What-I-Learned-from-Diana.md",
+      "slug": "2019-01-13-What-I-Learned-from-Diana"
+    }
+  ]
+}
