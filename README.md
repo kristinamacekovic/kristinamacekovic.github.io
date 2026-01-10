@@ -30,20 +30,24 @@ A minimalist personal blog built with pure HTML, CSS, and JavaScript.
 
 3. Write your content in Markdown below the front matter
 
-4. Update `posts.json` with the new post metadata:
-   ```json
-   {
-     "filename": "YYYY-MM-DD-Title-Slug.md",
-     "title": "Your Post Title",
-     "date": "YYYY-MM-DD",
-     "categories": ["category1", "category2"],
-     "url": "posts/YYYY-MM-DD-Title-Slug.md",
-     "slug": "YYYY-MM-DD-Title-Slug"
-   }
+4. Generate `posts.json` automatically:
+   ```bash
+   node generate-posts.js
+   # or
+   npm run generate-posts
    ```
-   Add this entry at the top of the `posts` array (newest first).
+   This will scan all markdown files in `posts/` and regenerate `posts.json` automatically.
 
-5. Commit and push your changes
+5. Commit and push your changes:
+   ```bash
+   git add posts/ posts.json
+   git commit -m "Add new post: Your Post Title"
+   git push origin main
+   ```
+
+### Manual Alternative
+
+If you prefer not to use the script, you can manually update `posts.json` by adding your post metadata at the top of the `posts` array (newest first).
 
 ## Local Development
 
