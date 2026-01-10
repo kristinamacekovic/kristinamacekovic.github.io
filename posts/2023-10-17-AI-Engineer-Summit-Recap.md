@@ -5,7 +5,7 @@ date:   2023-10-17
 categories: event AI
 ---
 
-![San Francisco Golden Gate Bridge](../assets/img/sf-bridge.jpg){: width="60%" }
+![San Francisco Golden Gate Bridge](../assets/img/sf-bridge.jpg)
 
 # Table of contents
 - [Conference](#conference)
