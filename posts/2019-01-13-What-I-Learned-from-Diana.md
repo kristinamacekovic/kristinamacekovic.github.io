@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What I Learned from Diana"
-date:   2019-01-13 13:20:42 +0200
+date:   2019-01-13 
 categories: life
 ---
 
