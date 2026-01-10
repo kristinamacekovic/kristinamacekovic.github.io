@@ -42,14 +42,20 @@ This installs a pre-commit hook that automatically generates `posts.json` whenev
 
 3. Write your content in Markdown below the front matter
 
-4. Commit and push your changes:
+4. Publish in one command:
    ```bash
-   git add posts/YYYY-MM-DD-Your-Post-Title.md
-   git commit -m "Add new post: Your Post Title"
-   git push origin main
+   npm run publish posts/YYYY-MM-DD-Your-Post-Title.md
+   # or
+   ./publish-post.sh posts/YYYY-MM-DD-Your-Post-Title.md
    ```
 
-   **The pre-commit hook automatically generates `posts.json`** - you don't need to run any scripts manually!
+   This will automatically:
+   - Add your post to git
+   - Generate `posts.json` (via pre-commit hook)
+   - Create a commit with a nice message
+   - Push to GitHub
+
+   Your post goes live immediately!
 
 ### Manual Generation (Optional)
 
