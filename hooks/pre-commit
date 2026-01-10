@@ -1,0 +1,27 @@
+#!/bin/sh
+#
+# Pre-commit hook to automatically generate posts.json
+# This runs every time you commit and ensures posts.json is up-to-date
+
+echo "🔄 Running pre-commit hook..."
+
+# Check if posts/ directory has any markdown files
+if ls posts/*.md 1> /dev/null 2>&1; then
+  echo "📝 Generating posts.json..."
+
+  # Run the generate-posts.js script
+  node generate-posts.js
+
+  # Check if posts.json was modified
+  if git diff --name-only | grep -q "posts.json"; then
+    echo "✅ posts.json was updated, adding to commit..."
+    git add posts.json
+  else
+    echo "✓ posts.json is already up-to-date"
+  fi
+else
+  echo "⚠️  No posts found in posts/ directory"
+fi
+
+echo "✅ Pre-commit hook complete!"
+exit 0

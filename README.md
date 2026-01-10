@@ -2,6 +2,18 @@
 
 A minimalist personal blog built with pure HTML, CSS, and JavaScript.
 
+## Setup
+
+After cloning this repository, run the setup script to install Git hooks:
+
+```bash
+./setup-hooks.sh
+# or
+npm run setup-hooks
+```
+
+This installs a pre-commit hook that automatically generates `posts.json` whenever you commit changes.
+
 ## Structure
 
 - `index.html` - Home page with navigation and blog list
@@ -30,24 +42,28 @@ A minimalist personal blog built with pure HTML, CSS, and JavaScript.
 
 3. Write your content in Markdown below the front matter
 
-4. Generate `posts.json` automatically:
+4. Commit and push your changes:
    ```bash
-   node generate-posts.js
-   # or
-   npm run generate-posts
-   ```
-   This will scan all markdown files in `posts/` and regenerate `posts.json` automatically.
-
-5. Commit and push your changes:
-   ```bash
-   git add posts/ posts.json
+   git add posts/YYYY-MM-DD-Your-Post-Title.md
    git commit -m "Add new post: Your Post Title"
    git push origin main
    ```
 
-### Manual Alternative
+   **The pre-commit hook automatically generates `posts.json`** - you don't need to run any scripts manually!
 
-If you prefer not to use the script, you can manually update `posts.json` by adding your post metadata at the top of the `posts` array (newest first).
+### Manual Generation (Optional)
+
+If you want to generate `posts.json` without committing (for example, to preview locally):
+
+```bash
+node generate-posts.js
+# or
+npm run generate-posts
+```
+
+### Without Git Hooks
+
+If you didn't run the setup script, you'll need to manually update `posts.json` or run `generate-posts.js` before each commit.
 
 ## Local Development
 
