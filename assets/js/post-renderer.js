@@ -82,8 +82,8 @@ async function loadPost() {
       throw new Error('No post specified');
     }
 
-    // Fetch the markdown file
-    const response = await fetch(`/posts/${postSlug}.md`);
+    // Fetch the markdown file from GitHub raw content
+    const response = await fetch(`https://raw.githubusercontent.com/kristinamacekovic/kristinamacekovic.github.io/main/posts/${postSlug}.md`);
     if (!response.ok) {
       throw new Error('Post not found');
     }
