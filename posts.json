@@ -1,6 +1,16 @@
 {
   "posts": [
     {
+      "filename": "2026-02-23-ai-mischief.md",
+      "title": "AI Mischief",
+      "date": "2026-02-23",
+      "categories": [
+        "life"
+      ],
+      "url": "posts/2026-02-23-ai-mischief.md",
+      "slug": "2026-02-23-ai-mischief"
+    },
+    {
       "filename": "2026-01-10-rhyming.md",
       "title": "Rhyming",
       "date": "2026-01-10",
