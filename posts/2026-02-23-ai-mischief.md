@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "AI Mischief"
+date:   2026-02-23
+categories: life
+---
+
+Obviously this is harder than I thought it would be, and the bar for writing should be much lower in order for me to stick to some resemblance of a schedule.
+
+For the past month, I have been immersed into our CRM change project which I'm PMing. I knew it would be hairy, but my skills have gotten rusty with 1y out of similar roles and I can feel it. It turned out our previous setup was very customized to our business model (which everyone was well aware of), but it worked really well. Now replicating that setup to a new tool (Hubspot) feels like the wheels are not greased. Our usage + a lot of other stuff has gotten me thinking about latent demand a lot, which I got introduced to through Boris Cherny, the creator of Claude Code (here's just his [latest interview](https://youtu.be/We7BZVKbCVw?si=3-KNkxcbNfDiKAyM) where he mentions it).
+
+Other than that, after about a bit over a year spent on the revenue/growth side, I'm moving (back) to product and really excited for it. Being a product builder at this time is the most exciting thing I could imagine doing. My first move has been introducing posthog to our tech stack to track product analytics which is a totally new thing for us but that I hope will prove to be invaluable moving forward. That's one for a follow up post on what I learned with that experiment. Btw a recommendation: posthog and a gazillion other apps we've been provided came from lennysbundle.com which you can subscribe to for just a few hundred bucks per year. It is an investment, but the value of the newsletter, community and products has been truly out of this world. I even went through the community's mentorship programme last year which was great, and even plan to be a mentor this year.
+
+In more informal news: I managed to work with Claude on a totally passion project which turned out to have such a great response. I was invited to a salon-like moving in party by a friend, who asked us to prepare a few slides on a topic we care about but probably nobody wants to hear about and present it for others. I chose "Afganistan Mischief" as my topic since I'm very deep into reading Ghost Wars. I encountered so many wtf moments reading the book that I wanted to make the topic approachable to everyone but at the same time infect them with the history bug. The presentation turned out to be a doozy: 1h later, one phone's battery dying and 18 slides later, I managed to intrigue everyone with the story enough for them to send messages the next day on when the sequel is happening. I loved the experience and love that I used AI to make something that helped me get closer to others, talking about a topic of interest.
+
+Now an aside on the technical part: For the materials, I exported my book highlights from Readwise Reader where I also had my "wtf" comments so Claude could get an understanding what the interesting bits are (+ I prompted to look for ironic situations). Then I turned to Claude Code for the presentation layout (tbh, here it can mostly one-shot it, for something this informal). The new part of the workflow was using pencil.dev to create a figma-style presentation that I then exported to a pdf.
