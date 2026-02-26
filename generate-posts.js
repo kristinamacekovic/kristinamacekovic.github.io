@@ -75,6 +75,7 @@ function generatePostsJson() {
       title: frontMatter.title || 'Untitled',
       date: frontMatter.date || '',
       categories: frontMatter.categories || [],
+      thumbnail: frontMatter.thumbnail || null,
       url: `posts/${filename}`,
       slug: slug
     };

@@ -69,6 +69,30 @@ function updateMetaTags(frontMatter) {
 
   const twitterCard = document.querySelector('meta[name="description"]');
   if (twitterCard) twitterCard.content = title;
+
+  // Update OG image if thumbnail is present
+  if (frontMatter.thumbnail) {
+    const ogImage = document.querySelector('meta[property="og:image"]');
+    if (ogImage) {
+      ogImage.content = frontMatter.thumbnail.startsWith('../')
+        ? 'https://kristinamacekovic.github.io' + frontMatter.thumbnail.replace('..', '')
+        : frontMatter.thumbnail;
+    }
+  }
+}
+
+// Render thumbnail image above post content if specified in front matter
+function renderThumbnail(frontMatter) {
+  const container = document.getElementById('post-thumbnail-container');
+  if (!container || !frontMatter.thumbnail) return;
+
+  const img = document.createElement('img');
+  img.src = frontMatter.thumbnail.startsWith('../')
+    ? frontMatter.thumbnail.replace('..', '')
+    : frontMatter.thumbnail;
+  img.alt = frontMatter.title || '';
+  img.className = 'post-thumbnail';
+  container.appendChild(img);
 }
 
 // Load and render the blog post
@@ -107,6 +131,9 @@ async function loadPost() {
 
     // Update meta tags
     updateMetaTags(frontMatter);
+
+    // Render thumbnail
+    renderThumbnail(frontMatter);
 
     // Convert markdown to HTML
     const html = marked.parse(content);

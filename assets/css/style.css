@@ -129,6 +129,12 @@ img {
   margin: 0 auto;
 }
 
+.post-thumbnail {
+  width: 100%;
+  border-radius: 12px;
+  margin: 1.5rem 0 2rem;
+}
+
 /* Navigation styles */
 nav ul {
   list-style-type: none;
