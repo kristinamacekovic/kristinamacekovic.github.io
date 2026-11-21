@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:ital,opsz,wght@0,14..32,300..600;1,14..32,300..600&display=swap" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/assets/css/style.css?v=2026112102" />
+    <link rel="stylesheet" href="/assets/css/style.css?v=2026112103" />
 
     <!-- Plausible Analytics -->
     <script defer data-domain="kristinamacekovic.github.io" src="https://plausible.io/js/script.js"></script>
@@ -50,12 +50,17 @@
         </header>
 
         <section class="intro">
-            <p class="eyebrow" id="eyebrow">Personal site · Writing since 2019</p>
+            <p class="eyebrow status" id="status">
+                <span class="pulse" id="pulse" aria-hidden="true"></span>
+                <span id="status-text">Personal site</span>
+            </p>
             <h1 class="title">Notes &amp; Writing</h1>
             <p class="lead">Writing on code, product, business and management, and whatever I am curious about at the moment. Lately mostly product and AI, with a few things about life.</p>
         </section>
 
-        <hr class="rule-strong" />
+        <figure class="heartbeat" id="heartbeat">
+            <hr class="rule-strong" />
+        </figure>
 
         <div class="index" id="index">
             <p class="index-status" id="index-status">Loading posts…</p>
@@ -112,7 +117,7 @@
         </footer>
     </main>
 
-    <script src="/assets/js/theme.js?v=2026112102"></script>
-    <script src="/assets/js/app.js?v=2026112102"></script>
+    <script src="/assets/js/theme.js?v=2026112103"></script>
+    <script src="/assets/js/app.js?v=2026112103"></script>
 </body>
 </html>
