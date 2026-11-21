@@ -2,39 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>404 - Page Not Found</title>
+    <title>Page not found · Kristina Macekovic</title>
+    <meta name="description" content="Personal website and blog of Kristina Macekovic: writing on code, product, business and management, and whatever I am curious about." />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Page not found · Kristina Macekovic" />
+    <meta property="og:description" content="Personal website and blog of Kristina Macekovic: writing on code, product, business and management, and whatever I am curious about." />
+    <meta property="og:url" content="https://kristinamacekovic.github.io" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@neznam_neznam_n" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/logo.png" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+
+    <!-- Apply the saved theme before first paint -->
+    <script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:ital,opsz,wght@0,14..32,300..600;1,14..32,300..600&display=swap" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="/assets/css/style.css" />
 
-    <style type="text/css" media="screen">
-      .container {
-        margin: 10px auto;
-        max-width: 600px;
-        text-align: center;
-      }
-      h1 {
-        margin: 30px 0;
-        font-size: 4em;
-        line-height: 1;
-        letter-spacing: -1px;
-      }
-    </style>
+    <!-- Plausible Analytics -->
+    <script defer data-domain="kristinamacekovic.github.io" src="https://plausible.io/js/script.js"></script>
 </head>
-<body a="auto">
-    <div class="w">
-        <div class="container">
-            <h1>404</h1>
-            <p><strong>Page not found :(</strong></p>
-            <p>The requested page could not be found.</p>
-            <p><a href="/">Return to home</a></p>
+<body>
+    <aside class="rail">
+        <a class="rail-mark" href="/" aria-label="Kristina Macekovic, home"><img src="/logo.png" alt="" /></a>
+        <div class="rail-foot">
+            <span class="rail-year">KM · <span data-current-year>2026</span></span>
+            <button class="theme-toggle" type="button" aria-label="Switch between light and dark theme" title="Switch theme"></button>
         </div>
-    </div>
+    </aside>
+
+    <main class="page">
+        <header class="masthead">
+            <a class="wordmark" href="/">Kristina Macekovic</a>
+            <nav class="crumbs" aria-label="Breadcrumb"><span class="crumb-current">Error 404</span></nav>
+        </header>
+
+        <article>
+            <p class="eyebrow">Error 404</p>
+            <h1 class="title">Page not found</h1>
+            <p class="lead">This page does not exist, or it moved.</p>
+
+            <hr class="rule-strong" />
+
+            <div class="prose page-body">
+                <p><a href="/">Go to the index</a></p>
+            </div>
+        </article>
+
+        <footer class="colophon">
+            <div class="colophon-cols">
+                <div>
+                    <h2 class="colophon-head">Writing</h2>
+                    <ul>
+                        <li><a href="/">Index</a></li>
+                        <li><a href="/#index">All posts</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="colophon-head">About</h2>
+                    <ul>
+                        <li><a href="/about/who-am-i.html">Who am I</a></li>
+                        <li><a href="/about/now.html">Now</a></li>
+                        <li><a href="/about/questions.html">Questions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="colophon-head">Elsewhere</h2>
+                    <ul>
+                        <li><a href="https://twitter.com/neznam_neznam_n" target="_blank" rel="noopener">X / Twitter</a></li>
+                        <li><a href="https://github.com/kristinamacekovic" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/kristina-macekovic" target="_blank" rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="colophon-inner">
+                <p class="colophon-note">Notes on building, reading and paying attention. Written mostly for future me.</p>
+                <a class="colophon-domain" href="/">kristinamacekovic.github.io</a>
+            </div>
+        </footer>
+    </main>
+
+    <script src="/assets/js/theme.js"></script>
 </body>
 </html>
