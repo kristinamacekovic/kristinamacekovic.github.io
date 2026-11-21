@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Kristina Macekovic</title>
-    <meta name="description" content="Personal website (primarily a blog) of Kristina Macekovic." />
+    <meta name="description" content="Personal website and blog of Kristina Macekovic: writing on code, product, business and management, and whatever I am curious about." />
 
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Kristina Macekovic" />
-    <meta property="og:description" content="Personal website (primarily a blog) of Kristina Macekovic." />
+    <meta property="og:description" content="Personal website and blog of Kristina Macekovic: writing on code, product, business and management, and whatever I am curious about." />
     <meta property="og:url" content="https://kristinamacekovic.github.io" />
 
     <!-- Twitter -->
@@ -19,39 +18,68 @@
     <meta name="twitter:creator" content="@neznam_neznam_n" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/logo.png" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+
+    <!-- Apply the saved theme before first paint -->
+    <script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:ital,opsz,wght@0,14..32,300..600;1,14..32,300..600&display=swap" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="/assets/css/syntax.css" />
-    <!-- Syntax Highlighting -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" />
 
     <!-- Plausible Analytics -->
     <script defer data-domain="kristinamacekovic.github.io" src="https://plausible.io/js/script.js"></script>
 </head>
-<body a="auto">
-    <div class="w">
-        <a href="/" class="back-link">..</a>
+<body>
+    <aside class="rail">
+        <a class="rail-mark" href="/" aria-label="Kristina Macekovic, home"><img src="/logo.png" alt="" /></a>
+        <div class="rail-foot">
+            <span class="rail-year">KM · <span data-current-year>2026</span></span>
+            <button class="theme-toggle" type="button" aria-label="Switch between light and dark theme" title="Switch theme"></button>
+        </div>
+    </aside>
 
-        <article>
-            <p class="post-meta">
-                <time datetime=""></time>
-            </p>
+    <main class="page">
+        <header class="masthead">
+            <a class="wordmark" href="/">Kristina Macekovic</a>
+        </header>
 
-            <h1 id="post-title"></h1>
+        <article class="post">
+            <p class="eyebrow" id="post-eyebrow"><a href="/">Writing</a></p>
+            <h1 class="title" id="post-title">&nbsp;</h1>
 
-            <div id="post-content">
-                <!-- Post content will be loaded here -->
+            <hr class="rule-strong" />
+
+            <div id="post-content" class="prose">
+                <p class="index-status">Loading…</p>
             </div>
         </article>
-    </div>
 
-    <!-- Markdown Parser -->
+        <nav class="post-nav" id="post-nav" aria-label="More writing" hidden>
+            <div class="index">
+                <section class="group">
+                    <h2 class="group-head"><span>More writing</span><a class="group-count" href="/">All posts</a></h2>
+                    <ul id="post-nav-list"></ul>
+                </section>
+            </div>
+        </nav>
+
+        <footer class="colophon">
+            <div class="colophon-inner">
+                <p class="colophon-note">Notes on building, reading and paying attention. Written mostly for future me.</p>
+                <a class="colophon-domain" href="/">kristinamacekovic.github.io</a>
+            </div>
+        </footer>
+    </main>
+
     <script src="https://cdn.jsdelivr.net/npm/marked@11.1.1/marked.min.js"></script>
-    <!-- Syntax Highlighting -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    <!-- Post Renderer -->
+    <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/post-renderer.js"></script>
 </body>
 </html>

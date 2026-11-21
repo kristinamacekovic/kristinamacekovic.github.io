@@ -16,7 +16,7 @@ This installs a pre-commit hook that automatically generates `posts.json` whenev
 
 ## Structure
 
-- `index.html` - Home page with navigation and blog list
+- `index.html` - Home page: numbered index of posts, about pages and links
 - `post.html` - Dynamic blog post renderer
 - `posts/` - Blog posts in Markdown format with YAML front matter
 - `posts.json` - Post metadata manifest
@@ -94,8 +94,12 @@ npx serve .
 
 ## Features
 
-- Minimalist monospace design
-- Dark mode support (respects system preference)
+- Editorial "printed index" design: paper background, left rail with the logo mark,
+  numbered sections, Inter for text and IBM Plex Mono for labels (Google Fonts)
+- Home page index built from `posts.json`, grouped by year
+- Post pages show date, categories and reading time, plus newer/older links
+- Light and dark themes: follows the system setting, with a toggle in the rail
+  that saves the choice in `localStorage`
 - Client-side Markdown rendering
 - Code syntax highlighting
 - Plausible analytics
