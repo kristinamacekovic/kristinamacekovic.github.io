@@ -127,20 +127,13 @@ a { color: inherit; }
   width: auto;
   height: 38px;
   margin: 0;
-  /* the logo is black ink on a white field: multiply drops the white */
-  mix-blend-mode: multiply;
+  /* logo-mark.png is black ink on a transparent background */
 }
 
-:root[data-theme="dark"] .rail-mark img {
-  filter: invert(1);
-  mix-blend-mode: screen;
-}
+:root[data-theme="dark"] .rail-mark img { filter: invert(1); }
 
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .rail-mark img {
-    filter: invert(1);
-    mix-blend-mode: screen;
-  }
+  :root:not([data-theme="light"]) .rail-mark img { filter: invert(1); }
 }
 
 .rail-foot {
