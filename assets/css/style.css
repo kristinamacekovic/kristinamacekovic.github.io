@@ -908,37 +908,3 @@ a.group-count:hover { color: var(--ink); }
   .rail, .theme-toggle, .post-nav, .post-aside, .page::before, .page::after { display: none; }
   .page { margin: 0; padding: 0; }
 }
-
-/* questions page */
-.prose .questions {
-  list-style: none;
-  padding: 0;
-  margin-top: -16px;
-  counter-reset: q;
-}
-
-.prose .questions li {
-  counter-increment: q;
-  display: grid;
-  grid-template-columns: 2.6em minmax(0, 1fr);
-  gap: 2px 0;
-  margin: 0;
-  padding: 16px 0;
-  border-bottom: 1px solid var(--rule);
-}
-
-.questions li::before {
-  content: counter(q, decimal-leading-zero);
-  grid-row: span 2;
-  padding-top: 0.25em;
-  font-family: var(--mono);
-  font-size: 11px;
-  font-style: italic;
-  color: var(--faint);
-}
-
-.questions strong { font-weight: 500; }
-
-.questions span { font-size: 14.5px; line-height: 1.5; color: var(--muted); }
-
-.prose small { font-size: 13px; color: var(--muted); }
