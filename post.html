@@ -47,29 +47,74 @@
     <main class="page">
         <header class="masthead">
             <a class="wordmark" href="/">Kristina Macekovic</a>
+            <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Writing</a><span class="crumb-sep" aria-hidden="true">//</span><span class="crumb-current"><span class="crumb-bracket">[</span><span id="crumb-year">Post</span><span class="crumb-bracket">]</span> <span id="crumb-title"></span></span></nav>
         </header>
 
-        <article class="post">
-            <p class="eyebrow" id="post-eyebrow"><a href="/">Writing</a></p>
-            <h1 class="title" id="post-title">&nbsp;</h1>
+        <div class="post-layout">
+            <aside class="post-aside">
+                <h2 class="aside-title">Writing</h2>
+                <p class="aside-lead">Everything published here, newest first.</p>
+                <nav aria-label="All posts">
+                    <ol class="aside-list" id="aside-list"></ol>
+                </nav>
+            </aside>
 
-            <hr class="rule-strong" />
+            <div class="post-main">
+                <article class="post">
+                    <p class="eyebrow" id="post-eyebrow">Writing</p>
+                    <h1 class="title" id="post-title">&nbsp;</h1>
+                    <p class="byline" id="post-byline"></p>
+                    <p class="lead" id="post-lead" hidden></p>
 
-            <div id="post-content" class="prose">
-                <p class="index-status">Loading…</p>
+                    <hr class="rule-strong" />
+
+                    <section class="contents" id="post-contents" aria-labelledby="contents-title" hidden>
+                        <h2 class="contents-title" id="contents-title">Contents</h2>
+                        <ol class="contents-list" id="contents-list"></ol>
+                    </section>
+
+                    <div id="post-content" class="prose">
+                        <p class="index-status">Loading…</p>
+                    </div>
+                </article>
+
+                <nav class="post-nav" id="post-nav" aria-label="More writing" hidden>
+                    <div class="index">
+                        <section class="group">
+                            <h2 class="group-head"><span>More writing</span><a class="group-count" href="/">All posts</a></h2>
+                            <ul id="post-nav-list"></ul>
+                        </section>
+                    </div>
+                </nav>
             </div>
-        </article>
-
-        <nav class="post-nav" id="post-nav" aria-label="More writing" hidden>
-            <div class="index">
-                <section class="group">
-                    <h2 class="group-head"><span>More writing</span><a class="group-count" href="/">All posts</a></h2>
-                    <ul id="post-nav-list"></ul>
-                </section>
-            </div>
-        </nav>
+        </div>
 
         <footer class="colophon">
+            <div class="colophon-cols">
+                <div>
+                    <h2 class="colophon-head">Writing</h2>
+                    <ul>
+                        <li><a href="/">Index</a></li>
+                        <li><a href="/#index">All posts</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="colophon-head">About</h2>
+                    <ul>
+                        <li><a href="/about/who-am-i.html">Who am I</a></li>
+                        <li><a href="/about/now.html">Now</a></li>
+                        <li><a href="/about/questions.html">Questions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="colophon-head">Elsewhere</h2>
+                    <ul>
+                        <li><a href="https://twitter.com/neznam_neznam_n" target="_blank" rel="noopener">X / Twitter</a></li>
+                        <li><a href="https://github.com/kristinamacekovic" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/kristina-macekovic" target="_blank" rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="colophon-inner">
                 <p class="colophon-note">Notes on building, reading and paying attention. Written mostly for future me.</p>
                 <a class="colophon-domain" href="/">kristinamacekovic.github.io</a>

@@ -97,7 +97,9 @@ npx serve .
 - Editorial "printed index" design: paper background, left rail with the logo mark,
   numbered sections, Inter for text and IBM Plex Mono for labels (Google Fonts)
 - Home page index built from `posts.json`, grouped by year
-- Post pages show date, categories and reading time, plus newer/older links
+- Post pages: sidebar of all posts, breadcrumb, numbered contents list that
+  follows the reader, deep links on every heading, newer/older links, and an
+  optional `description:` front matter field shown as a summary
 - Light and dark themes: follows the system setting, with a toggle in the rail
   that saves the choice in `localStorage`
 - Client-side Markdown rendering
