@@ -83,10 +83,12 @@ function postUrl(post) {
 /* ------------------------------------------------------------ loading -- */
 
 // GitHub Pages runs Jekyll, which converts posts/*.md to HTML, so the raw
-// file is not served from this domain. Try the local file first (works on a
-// local server), then fall back to the raw file on GitHub.
+// file is not served from this domain: load it from GitHub instead. On a
+// local server, load the local file first, so unpushed posts can be previewed.
+const IS_LOCAL = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname);
+
 async function fetchMarkdown() {
-  const sources = [`/posts/${slug}.md`, `${RAW_BASE}${slug}.md`];
+  const sources = IS_LOCAL ? [`/posts/${slug}.md`, `${RAW_BASE}${slug}.md`] : [`${RAW_BASE}${slug}.md`];
   for (const url of sources) {
     try {
       const response = await fetch(url);

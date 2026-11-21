@@ -115,3 +115,14 @@ This site is designed to work on GitHub Pages or any static hosting platform. Si
 ## Migration from Jekyll
 
 This site was previously built with Jekyll. The backup of the Jekyll version is preserved in the `backup-jekyll` branch if you need to reference it.
+## Cache busting
+
+GitHub Pages caches files for about 10 minutes. The HTML pages load the CSS and
+JavaScript with a version query (for example `style.css?v=20261121`). When you
+change a CSS or JS file, change that version in every HTML file, so that
+browsers do not mix new HTML with old CSS or JavaScript:
+
+```bash
+# macOS (on Linux, use sed -i without the '')
+grep -rl '?v=' --include=*.html . | xargs sed -i '' 's/?v=[0-9]*/?v=NEWVERSION/g'
+```
